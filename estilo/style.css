@@ -1,0 +1,362 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+/**Boot CSS**/
+
+html,body{
+	height: 100%;
+}
+
+input{
+	border: 0;
+}
+
+img{
+	width: 100%;
+	max-width: 530px;
+}
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 50px;
+}
+
+.w50{
+	padding: 0 2%;
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/**Estilização do site**/
+header{
+	position: relative;
+	padding: 20px 0;
+	background: #0B3B0B;
+	width: 100%;
+}
+
+header .simbolo{
+	font-size: 47px;
+	font-weight: 400;
+	color: gray;
+}
+
+header .logo{
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: gray;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+header .logo h3{
+	font-size: 38px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: gray;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	position: relative;
+	top: 8px;
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-weight: 300;
+	font-size: 20px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav.desktop a{
+	color: gray;
+	text-decoration: none;
+}
+
+nav.desktop a:hover{
+	text-decoration: underline;
+}
+
+section.banner-container{
+	width: 100%;
+	height: 720px;
+	position: relative;
+}
+
+.banner-single{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(51, 51, 51, 0.3);
+}
+
+section.descricao-autor{
+	padding: 10px 0;
+	background: #BDBDBD;
+}
+
+section.descricao-autor h2{
+	font-size: 28px;
+	font-weight: 400;
+	color: #0B3B0B;
+}
+
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	margin-top: 10px;
+}
+
+section.especialidades{
+	padding: 10px 0;
+	background: #BDBDBD;
+}
+
+.box-especialidade{
+	margin: 40px 0;
+	text-align: center;
+}
+
+section.especialidades h2.title{
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	color: #0B3B0B;
+	font-family: 'Anton', sans-serif;
+}
+
+.box-especialidade h3{
+	text-align: center;
+	font-size: 50px;
+	color: #0B3B0B;
+}
+
+.box-especialidade h4{
+	text-align: center;
+	font-size: 25px;
+	color: #0B3B0B;
+}
+
+.box-especialidade p{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+section.extras{
+	padding: 30px 0;
+	background: #0B610B;
+}
+
+.depoimentos-container,.servicos-container{
+	padding: 0 5%;
+}
+
+section.extras .title{
+	color: #2E2E2E;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.depoimento-single{
+	padding: 15px 0;
+	border-bottom: 1px solid gray;
+}
+
+p.depoimento-descricao{
+	font-size: 15px;
+	color: white;
+}
+
+p.nome-autor{
+	font-size: 15px;
+	color: #2E2E2E;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.servicos ul{
+	margin: 20px 0;
+	list-style-position: inside;	
+}
+
+.servicos li{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+footer{
+	background: #0B3B0B;
+	padding: 10px 0;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+section.erro-404{
+	text-align: center;
+	color: red;
+	font-size: 35px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+#map{
+	width: 100%;
+	height: 400px;
+}
+
+.contato-container{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.contato-container input[type=text]{
+	margin: 3px 0;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	text-align: center;
+	font-size: 30px;
+	max-width: 600px;
+}
+
+.contato-container textarea{
+	padding: 8px;
+	margin: 3px 0;
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	font-size: 30px;
+	max-width: 600px;
+	resize: vertical;
+}
+
+.contato-container input[type=submit]{
+	background: #0B610B;
+	width: 140px;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+	img{
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+	}
+	.w50{
+		padding: 20px;
+		width: 100%;
+	}
+	.w33{
+		padding: 20px;
+		width: 100%;
+	}
+	.box-especialidade{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 760px){
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile{
+		font-size: 30px;
+		cursor: pointer;
+		color: grey;
+	}
+
+	nav.mobile ul{
+		top: 75px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: none;
+		text-align: center;
+	}
+
+	nav.mobile li{
+		font-weight: 300;
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 17px;
+		padding: 8px 0;
+	}
+
+	nav.mobile li a{
+		display: block;
+		color:  #0B3B0B;
+		text-decoration: none;
+	}
+}
